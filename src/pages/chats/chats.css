@@ -1,0 +1,81 @@
+.chat {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+
+    &__left {
+        padding: 0px 10px 10px 10px;
+        flex-basis: 25%;
+        border-right: 1px solid #EAEAEA;
+    }
+
+    &__profile-btn {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        text-align: right;
+        color: #999999;
+        margin-top: 21px;
+    }
+
+    &__search {
+        padding: 6px 10px;
+        margin-top: 23px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        background: #EFEFEF;
+        border-radius: 5px;
+        height: 32px;
+    }
+
+    &__search-input {
+        background: #EFEFEF;
+        border: none;
+        outline: none;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        color: #1E1E1E;
+    }
+
+    &__list {
+        margin-top: 14px;
+    }
+
+    &__item {
+        height: 57px;
+        cursor: pointer;
+    }
+
+    &__item-wrapper{
+       display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    &__item-avatar {
+        width: 37px;
+        height: 37px;
+        background: #EFEFEF;
+        border-radius: 100%;
+    }
+
+    &__item-title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 13px;
+        color: #1E1E1E;
+    }
+}
+
+
+.line-wrapper {
+    height: 1px;
+    background: #EAEAEA;
+}

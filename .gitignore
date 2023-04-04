@@ -1,0 +1,7 @@
+npm-debug.log*
+build/Release
+node_modules
+.npm
+dist
+.parcel-cache
+.parcelrc
