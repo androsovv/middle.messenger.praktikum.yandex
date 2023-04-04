@@ -1,5 +1,4 @@
-import userSettingsPage from "./userSettings.hbs";
-import templateButton from "../../components/button/index";
+import userSettingsPageTpl from "./userSettings.hbs";
 import "./userSettings.css";
 
 export const userSettingsPage = () => {
@@ -12,5 +11,5 @@ export const userSettingsPage = () => {
       phone: "+7 (909) 967 30 30",
     }
 
-    return userSettingsPage(context);
+    return userSettingsPageTpl(context);
 }

@@ -2,15 +2,10 @@
   "name": "middle.messenger.praktikum.yandex",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "start": "parcel serve static/index.html --port 3000",
+    "start": "parcel build static/index.html && node ./src/server.js",
     "dev": "parcel static/index.html",
-    "build": "parcel build static/index.html"
-  },
-  "engines": {
-    "node": "18.15.0",
-    "npm": "9.2.0"
+    "build": "build static/index.html"
   },
   "keywords": [],
   "author": "",
@@ -20,11 +15,8 @@
     "browserify-zlib": "^0.2.0",
     "buffer": "^5.7.1",
     "crypto-browserify": "^3.12.0",
-    "cssnano": "^5.1.15",
     "events": "^3.3.0",
-    "express": "^4.18.2",
     "nodemon": "^2.0.22",
-    "parcel": "latest",
     "parcel-transformer-handlebars": "^1.0.0",
     "path-browserify": "^1.0.1",
     "postcss": "^8.4.21",
@@ -40,9 +32,15 @@
     "url": "^0.11.0",
     "util": "^0.12.5"
   },
+  "browserslist": [
+    "last 2 versions",
+    "not dead"
+  ],
   "dependencies": {
+    "express": "^4.18.2",
     "handlebars": "^4.7.7",
-    "parcel-transformer-hbs": "^1.0.4",
-    "parcel-transformer-handlebars": "^1.0.0"
+    "parcel": "^2.8.3",
+    "parcel-transformer-handlebars": "^1.0.0",
+    "parcel-transformer-hbs": "^1.0.4"
   }
 }

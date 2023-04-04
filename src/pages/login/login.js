@@ -1,8 +1,6 @@
-import loginPage from "./login.hbs";
+import loginPageTpl from "./login.hbs";
 import "./login.css";
 
-
-
 export const loginPage = () => {
-    return loginPage();
+    return loginPageTpl();
 }
