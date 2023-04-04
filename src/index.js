@@ -1,11 +1,11 @@
-import loginPage from "./pages/login/index";
-import registrationPage from "./pages/registration/index";
+import loginPage from "./pages/login/index.js";
+import registrationPage from "./pages/registration/index.js";
 import {serverErrorTemplate} from "./pages/error-500/error-500";
-import userErrorTemplate from "./pages/error-400/index";
-import userSettingsPage from "./pages/user-settings/index";
-import inputTemplate from "./components/input/index";
-import templateButton from "./components/button/index";
-import chatPage from "./pages/chats/index";
+import userErrorTemplate from "./pages/error-400/index.js";
+import userSettingsPage from "./pages/user-settings/index.js";
+import inputTemplate from "./components/input/index.js";
+import templateButton from "./components/button/index.js";
+import chatPage from "./pages/chats/index.js";
 
 
 const main = document.querySelector('.main');

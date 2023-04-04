@@ -6,7 +6,7 @@
   "scripts": {
     "start": "parcel serve static/index.html --port 3000",
     "dev": "parcel static/index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build static/index.html"
   },
   "engines": {
     "node": "18.15.0",
