@@ -22,8 +22,10 @@ ul {
 }
 
 .route-links {
+    position: absolute;
+    z-index: 5;
     display: flex;
-    flex-direction: column;
+    justify-content: right;
     gap: 20px;
     font-family: 'Inter';
     font-style: normal;

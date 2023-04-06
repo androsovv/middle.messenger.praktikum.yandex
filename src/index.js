@@ -10,6 +10,8 @@ import chatPage from "./pages/chats/index.js";
 
 const main = document.querySelector('.main');
 
+
+
 const getLoginPage = (event) => {
     event.preventDefault();
     main.innerHTML = loginPage();
@@ -34,8 +36,8 @@ const getRegistrationPage = (event) => {
 
 document.querySelector('#login').addEventListener('click', (event) => {
     getLoginPage(event);
-    document.querySelector('.login__registration').addEventListener('click', event => getRegistrationPage(event));
-});
+})
+
 
 document.querySelector('#registration').addEventListener('click', (event) => {
     getRegistrationPage(event);
@@ -62,6 +64,7 @@ document.querySelector('#chats').addEventListener('click', (event) => {
     event.preventDefault();
     main.innerHTML = chatPage();
 })
+
 
 
 
