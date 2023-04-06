@@ -15,21 +15,21 @@ const main = document.querySelector('.main');
 const getLoginPage = (event) => {
     event.preventDefault();
     main.innerHTML = loginPage();
-    document.querySelector('.login__form-nickname').innerHTML = inputTemplate("text", "Логин");
-    document.querySelector('.login__form-password').innerHTML = inputTemplate("password", "Пароль");
+    document.querySelector('.login__form-nickname').innerHTML = inputTemplate("text", "Логин", 'login');
+    document.querySelector('.login__form-password').innerHTML = inputTemplate("password", "Пароль", 'password');
     document.querySelector('.login__btn').innerHTML = templateButton("Авторизоваться");
 }
 
 const getRegistrationPage = (event) => {
     event.preventDefault();
     main.innerHTML = registrationPage();
-    document.querySelector('.registration__form-email').innerHTML = inputTemplate("text", "Почта");
-    document.querySelector('.registration__form-login').innerHTML = inputTemplate("text", "Логин");
-    document.querySelector('.registration__form-name').innerHTML = inputTemplate("text", "Имя");
-    document.querySelector('.registration__form-surname').innerHTML = inputTemplate("text", "Фамилия");
-    document.querySelector('.registration__form-phone').innerHTML = inputTemplate("text", "Телефон");
-    document.querySelector('.registration__form-pass').innerHTML = inputTemplate("password", "Пароль");
-    document.querySelector('.registration__form-second-pass').innerHTML = inputTemplate("password", "Пароль ещё раз");
+    document.querySelector('.registration__form-email').innerHTML = inputTemplate("text", "Почта", 'email');
+    document.querySelector('.registration__form-login').innerHTML = inputTemplate("text", "Логин", 'login');
+    document.querySelector('.registration__form-name').innerHTML = inputTemplate("text", "Имя", 'first_name');
+    document.querySelector('.registration__form-surname').innerHTML = inputTemplate("text", "Фамилия", 'second_name');
+    document.querySelector('.registration__form-phone').innerHTML = inputTemplate("text", "Телефон", 'phone');
+    document.querySelector('.registration__form-pass').innerHTML = inputTemplate("password", "Пароль", 'password');
+    document.querySelector('.registration__form-second-pass').innerHTML = inputTemplate("password", "Пароль ещё раз", 'password');
     document.querySelector('.registration__btn').innerHTML = templateButton('Зарегистрироваться');
 }
 

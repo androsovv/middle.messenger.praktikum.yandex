@@ -5,7 +5,7 @@
   "scripts": {
     "start": "parcel build static/index.html && node server.js --no-cache",
     "dev": "parcel static/index.html --no-cache",
-    "build": "parcel static/index.html --no-cache"
+    "build": "parcel build static/index.html --no-cache"
   },
   "keywords": [],
   "author": "",
