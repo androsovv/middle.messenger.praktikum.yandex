@@ -64,15 +64,3 @@ document.querySelector('#chats').addEventListener('click', (event) => {
     event.preventDefault();
     main.innerHTML = chatPage();
 })
-
-
-
-
-
-
-
-
-
-
-
-

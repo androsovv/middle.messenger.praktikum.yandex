@@ -5,6 +5,3 @@ export const registrationPage = () => {
 
     return registrationPageTpl();
 }
-
-
-
