@@ -1,3 +1,21 @@
+@import "./components/button/button.css";
+@import "./components/input/input.css";
+@import "./pages/chats/chats.css";
+@import "./pages/error-400/error-400.css";
+@import "./pages/error-500/error-500.css";
+@import "pages/login/login.css";
+@import "pages/registration/registration.css";
+@import "pages/user-settings/userSettings.css";
+
+:root {
+    --main-blue: #3369F3;
+    --button-text-color: #FFFFFF;
+    --main-font-color: #1E1E1E;
+    --sub-text-color: #999999;
+    --light-grey: #EFEFEF;
+    --border-color: #EAEAEA;
+}
+
 * {
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
@@ -14,7 +32,7 @@ ul {
 }
 
 
-.main {
+.root {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -31,5 +49,11 @@ ul {
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
-    color: #3369F3;
+    color: var(--main-blue);
+}
+
+nav {
+    position: relative;
+    top: 0px;
+    left: 0px;
 }

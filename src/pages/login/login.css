@@ -14,29 +14,34 @@
         font-size: 20px;
         line-height: 20px;
         text-align: center;
-        color: #1E1E1E;
-     }
+        color: var(--main-font-color);
+    }
+
     &__form {
-         margin-top: 40px;
-         padding: 0 30px;
-     }
+        margin-top: 40px;
+        padding: 0 30px;
+    }
+
     &__form-password {
-         margin-top: 16px;
-     }
+        margin-top: 16px;
+    }
+
     &__btn {
-         display: flex;
-         justify-content: center;
-         margin-top: 160px;
-     }
+        display: flex;
+        justify-content: center;
+        margin-top: 160px;
+        border: none;
+    }
+
     &__registration {
-         margin-top: 14px;
-         font-family: 'Inter';
-         font-style: normal;
-         font-weight: 500;
-         font-size: 11px;
-         line-height: 11px;
-         color: #3369F3;
-         text-align: center;
-     }
+        margin-top: 14px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 11px;
+        color: var(--main-blue);
+        text-align: center;
+    }
 
 }

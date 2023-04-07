@@ -10,7 +10,7 @@
          font-weight: 500;
          font-size: 9px;
          line-height: 9px;
-         color: #999999;
+         color: var(--sub-text-color);
      }
 
      &__input {
@@ -20,11 +20,11 @@
         font-weight: 500;
         font-size: 13px;
         line-height: 13px;
-        color: #1E1E1E;
+        color: var(--main-font-color);
         outline: none;
       }
 
      &__bottom-line {
-        border: 1px solid #3369F3;
+        border: 1px solid var(--main-blue);
       }
 }

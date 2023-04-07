@@ -6,7 +6,7 @@
     &__left {
         padding: 0px 10px 10px 10px;
         flex-basis: 25%;
-        border-right: 1px solid #EAEAEA;
+        border-right: 1px solid var(--border-color);
     }
 
     &__profile-btn {
@@ -15,7 +15,7 @@
         font-weight: 500;
         font-size: 12px;
         text-align: right;
-        color: #999999;
+        color: var(--sub-text-color);
         margin-top: 21px;
     }
 
@@ -25,13 +25,13 @@
         display: flex;
         align-items: center;
         width: 100%;
-        background: #EFEFEF;
+        background: var(--light-grey);
         border-radius: 5px;
         height: 32px;
     }
 
     &__search-input {
-        background: #EFEFEF;
+        background: var(--light-grey);
         border: none;
         outline: none;
 
@@ -39,7 +39,7 @@
         font-style: normal;
         font-weight: 500;
         font-size: 12px;
-        color: #1E1E1E;
+        color: var(--main-font-color);
     }
 
     &__list {
@@ -61,7 +61,7 @@
     &__item-avatar {
         width: 37px;
         height: 37px;
-        background: #EFEFEF;
+        background: var(--light-grey);
         border-radius: 100%;
     }
 
@@ -70,12 +70,12 @@
         font-weight: 600;
         font-size: 13px;
         line-height: 13px;
-        color: #1E1E1E;
+        color: var(--main-font-color);
     }
 }
 
 
 .line-wrapper {
     height: 1px;
-    background: #EAEAEA;
+    background: var(--border-color);
 }

@@ -11,7 +11,7 @@
      font-size: 40px;
      line-height: 40px;
      text-align: center;
-     color: #1E1E1E;
+     color: var(--main-font-color);
  }
 
 &__message {
@@ -22,7 +22,7 @@
      font-size: 20px;
      line-height: 20px;
      text-align: center;
-     color: #1E1E1E;
+     color: var(--main-font-color);
  }
 
 &__comeback {
@@ -33,6 +33,6 @@
      font-size: 11px;
      line-height: 11px;
      text-align: center;
-     color: #3369F3;
+     color: var(--main-blue);
  }
 }
