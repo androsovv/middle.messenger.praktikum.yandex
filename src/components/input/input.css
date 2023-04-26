@@ -28,12 +28,4 @@
         border: 1px solid var(--main-blue);
       }
 
-    &__error {
-        color: #ff2f2f;
-        font-weight: 400;
-        font-size: 8px;
-        line-height: 8px;
-        padding-top: 7px;
-        transition: all 0.3s linear;
-    }
 }

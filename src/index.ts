@@ -24,6 +24,6 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
 
-    root.append(registrationPage.getContent()!);
+    root.append(loginPage.getContent()!);
 })
 

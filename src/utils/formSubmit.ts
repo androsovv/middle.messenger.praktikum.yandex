@@ -1,15 +1,4 @@
 
-// const form = document.querySelector('form');
-// form.addEventListener('submit', (event) => {
-//     event.preventDefault();
-//     const data = {};
-//     const inputs = form.querySelectorAll('input');
-//
-//     inputs.forEach((input) => {
-//         data[input.name] = input.value;
-//     })
-//     console.log(data)
-// });
 
 export const getData = (event) => {
     event.preventDefault();
@@ -17,7 +6,7 @@ export const getData = (event) => {
         const data = {};
         const inputs = document.querySelectorAll('input');
 
-        inputs.forEach((input) => {
+        inputs.forEach((input: HTMLInputElement) => {
             data[input.name] = input.value;
         })
 

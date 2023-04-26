@@ -1,0 +1,6 @@
+.error {
+    color: #ff2f2f;
+    font-weight: 400;
+    font-size: 10px;
+    transition: all 0.3s linear;
+}
