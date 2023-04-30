@@ -18,7 +18,7 @@
 
 * {
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+    font-family: Inter, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -49,7 +49,6 @@ button {
     display: flex;
     justify-content: right;
     gap: 20px;
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
