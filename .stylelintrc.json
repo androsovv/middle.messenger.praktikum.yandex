@@ -3,7 +3,8 @@
     "stylelint-config-standard"
   ],
   "rules": {
-    "string": "string",
+    "at-rule-empty-line-before": null,
+    "length-zero-no-unit": null,
     "color-hex-length": "long",
     "selector-class-pattern": null,
     "selector-id-pattern": null,

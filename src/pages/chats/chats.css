@@ -4,13 +4,12 @@
     display: flex;
 
     &__left {
-        padding: 0px 10px 10px 10px;
+        padding: 0 10px 10px;
         flex-basis: 25%;
         border-right: 1px solid var(--border-color);
     }
 
     &__profile-btn {
-        font-family: 'Inter';
         font-style: normal;
         font-weight: 500;
         font-size: 12px;
@@ -34,8 +33,6 @@
         background: var(--light-grey);
         border: none;
         outline: none;
-
-        font-family: 'Inter';
         font-style: normal;
         font-weight: 500;
         font-size: 12px;
@@ -99,7 +96,7 @@
         }
         &__message-form {
             height: 54px;
-            padding: 10px 0px;
+            padding: 10px 0;
             display: flex;
             justify-content: center;
             align-content: center;

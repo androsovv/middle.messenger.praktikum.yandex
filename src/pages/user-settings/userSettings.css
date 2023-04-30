@@ -15,7 +15,6 @@
 
     &__name {
         margin-top: 21px;
-        font-family: 'Inter';
         font-style: normal;
         font-weight: 600;
         font-size: 16px;
@@ -35,7 +34,6 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        font-family: 'Inter';
         font-style: normal;
         font-weight: 500;
         font-size: 13px;
@@ -43,7 +41,6 @@
     }
 
     &__data-item-text {
-        font-family: 'Inter';
         font-style: normal;
         font-weight: 500;
         font-size: 13px;
