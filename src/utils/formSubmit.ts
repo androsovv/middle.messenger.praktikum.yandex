@@ -1,6 +1,6 @@
 
 
-export const getData = (event) => {
+export const getData = event => {
     event.preventDefault();
     const formSubmit = (): void => {
         const data = {};

@@ -31,12 +31,16 @@ ul {
     list-style-type: none;
 }
 
+button {
+    border: none;
+}
 
 .root {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    margin-top: 20px;
 }
 
 .route-links {

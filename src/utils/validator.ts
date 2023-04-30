@@ -12,7 +12,7 @@ const emailCharacters = /^\S+@\S+\.([A-Za-z]{2,4})$/;
 const noDigits = /[a-zA-Z\(\)\ -]/;
 const phoneSymbols = /^[\d\+][\d\(\)\ -]\d$/;
 
-export const loginValidate = event => {
+export const loginValidate = (event: any) => {
     const value = event.target.value;
     if (!value.length) {
         return 'Логин не может быть пустым';
@@ -34,7 +34,7 @@ export const loginValidate = event => {
     }
 }
 
-export const nameValidate = event => {
+export const nameValidate = (event: any) => {
     const value = event.target.value;
     if (!value.length) {
         return 'Поля имени и фамилии не могут быть пустыми';
@@ -47,7 +47,7 @@ export const nameValidate = event => {
     }
 }
 
-export const passwordValidate = event => {
+export const passwordValidate = (event: any) => {
     const value = event.target.value;
 
     if (!value.length) {
@@ -64,7 +64,7 @@ export const passwordValidate = event => {
     }
 }
 
-export const emailValidate = event => {
+export const emailValidate = (event: any) => {
     const value = event.target.value;
 
     if (!value.length) {
@@ -75,7 +75,7 @@ export const emailValidate = event => {
     }
 }
 
-export const phoneValidate = event => {
+export const phoneValidate = (event: any) => {
     const value = event.target.value;
 
     if (!value.length) {
@@ -92,9 +92,8 @@ export const phoneValidate = event => {
     }
 }
 
-export const messageValidate = event => {
-    const value = event.target.value;
-
+export const messageValidate = (event: any) => {
+    const value = event.target.message.value;
     if (!value.length) {
         return 'Ваше сообщение пустое';
     }

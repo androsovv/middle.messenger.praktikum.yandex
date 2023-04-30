@@ -1,6 +1,6 @@
 .chat {
     width: 100vw;
-    height: 100vh;
+    height: 95vh;
     display: flex;
 
     &__left {
@@ -52,7 +52,7 @@
     }
 
     &__item-wrapper{
-       display: flex;
+        display: flex;
         align-items: center;
         gap: 10px;
         padding: 10px 0;
@@ -72,8 +72,63 @@
         line-height: 13px;
         color: var(--main-font-color);
     }
+
+    &__right {
+        padding: 10px 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        &__top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__profile {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &__nickname {
+            margin-left: 10px;
+        }
+        &__line-wrapper-top {
+            margin-top: 10px;
+        }
+        &__messages {
+           flex-basis: 100%;
+        }
+        &__message-form {
+            height: 54px;
+            padding: 10px 0px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+
+    }
 }
 
+.kebab {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+
+    &__item {
+        background: #1E1E1E;
+        width: 3px;
+        height: 3px;
+    }
+}
+
+.avatar-empty-chat {
+    width: 34px;
+    height: 34px;
+    background: var(--light-grey);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .line-wrapper {
     height: 1px;

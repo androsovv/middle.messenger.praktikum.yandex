@@ -11,9 +11,14 @@ import {
     phoneValidate
 } from "../../utils/validator";
 
+type registrationProps = {
+    events?: {
+      submit: (event: SubmitEvent) => void;
+    }
+  }
 
 export class RegistrationPage extends Block {
-    constructor(props) {
+    constructor(props: registrationProps) {
         super('div', props);
     }
 
@@ -88,7 +93,6 @@ export class RegistrationPage extends Block {
     }
 
     protected render() {
-        console.log('render');
         return this.compile(registrationPageTpl, this.props);
     }
 

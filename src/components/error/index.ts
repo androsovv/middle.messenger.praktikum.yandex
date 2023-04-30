@@ -2,8 +2,11 @@ import errorTpl from "./error.hbs";
 import Block from '../../utils/Block';
 import "./error.css";
 
+type errorProps = {
+    text: string
+};
 export class ErrorText extends Block {
-    constructor(props) {
+    constructor(props: errorProps) {
         super('span', props);
 
         this.element?.classList.add('error');

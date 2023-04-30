@@ -1,0 +1,14 @@
+.message-input {
+    width: 849px;
+    border: none;
+    background: var(--light-grey);
+    height: 32px;
+    border-radius: 30px;
+    outline: none;
+    padding: 10px 20px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+}
