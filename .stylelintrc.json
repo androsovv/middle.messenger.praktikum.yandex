@@ -1,20 +1,17 @@
 {
    "extends": "stylelint-config-standard",
    "rules": {
-     "color-hex-case": "lower",
      "color-hex-length": "long",
      "font-family-name-quotes": null,
-     "font-family-no-missing-generic-family": false,
      "length-zero-no-unit": null,
      "declaration-empty-line-before": null,
-     "string": null,
-     "rule-empty-line-before": "never",
      "shorthand-property-no-redundant-values": null,
      "font-family-no-missing-generic-family-keyword": false,
      "alpha-value-notation": false,
      "color-function-notation": false
    },
    "ignoreFiles": [
-     "build/*"
+     "build/*",
+     "dist"
    ]
  }
