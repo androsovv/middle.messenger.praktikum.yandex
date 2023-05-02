@@ -7,7 +7,7 @@ type inputProps = {
     overText: string,
     inputType: string,
     name: string,
-    events: {
+    events?: {
         focusin: (event: FocusEvent) => void,
         focusout: (event: FocusEvent) => void,
     }

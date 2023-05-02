@@ -1,11 +1,12 @@
 import {LoginPage} from "./pages/login";
 import {RegistrationPage} from "./pages/registration";
-import {getData} from "./utils/formSubmit";
+import {formSubmit} from "./utils/formSubmit";
 import {Chats} from "./pages/chats";
 import {messageValidate} from "./utils/validator";
 import {UserSettings} from "./pages/user-settings";
 import {UserError} from "./pages/error-400";
 import {ServerError} from "./pages/error-500";
+import {UserEdit} from "./pages/editUser-settings";
 
 
 const root = document.querySelector('.root');
@@ -15,19 +16,21 @@ const chats = document.querySelector('#chats');
 const settings = document.querySelector('#user-settings');
 const userError = document.querySelector('#user-error');
 const serverError = document.querySelector('#server-error');
+const userEdit = document.querySelector('#edit-user');
 
 
 const loginPage = new LoginPage({
     events: {
         submit: event => {
-            getData(event);
+            formSubmit(event);
+            console.log('shla');
         }
     }
 });
 const registrationPage = new RegistrationPage({
     events: {
         submit: event => {
-            getData(event);
+            formSubmit(event);
         }
     }
 });
@@ -35,7 +38,7 @@ const registrationPage = new RegistrationPage({
 const chatsPage = new Chats({
     events: {
         submit: event => {
-            getData(event);
+            formSubmit(event);
             chatsPage.children.error.setProps({ text: messageValidate(event)});
         }
     }
@@ -53,12 +56,20 @@ const serverErrorPage = new ServerError({
     errorMessage: 'Мы уже фиксим'
 });
 
+const userEditPage = new UserEdit({
+    events: {
+        submit: event => {
+            formSubmit(event);
+        }
+    }
+});
+
 const getContent = (page: any)  => {
     root?.replaceChildren(page.getContent());
 }
 
 window.addEventListener('DOMContentLoaded', () => {
-    root?.append(loginPage.getContent()!);
+    root?.append(userEditPage.getContent()!);
 })
 
 login?.addEventListener('click', event => {
@@ -89,5 +100,10 @@ userError?.addEventListener('click', event => {
 serverError?.addEventListener('click', event => {
     event.preventDefault();
     getContent(serverErrorPage);
+})
+
+userEdit?.addEventListener('click', event => {
+    event.preventDefault();
+    getContent(userEditPage);
 })
 

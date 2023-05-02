@@ -27,11 +27,13 @@ const queryStringify = (data: any) => {
     }, "?");
 };
 
+type HTTPMethod = (url: string, options?: OptionsWithoutMethod) => Promise<XMLHttpRequest>;
+
 class httpTransport {
-    get(
-        url: string,
-        options: OptionsWithoutMethod = {}
-    ): Promise<XMLHttpRequest> {
+    get: HTTPMethod = (
+        url,
+        options = {}
+    ): Promise<XMLHttpRequest> => {
         return this.request(
             url + queryStringify(options.data),
             { ...options, method: METHOD.GET },
@@ -39,7 +41,7 @@ class httpTransport {
         );
     }
 
-    post(url: string, options: Options): Promise<XMLHttpRequest> {
+    post: HTTPMethod = (url, options = {}): Promise<XMLHttpRequest>  => {
         return this.request(
             url,
             { ...options, method: METHOD.POST },
@@ -47,7 +49,7 @@ class httpTransport {
         );
     }
 
-    put(url: string, options: Options): Promise<XMLHttpRequest> {
+    put: HTTPMethod = (url, options = {}): Promise<XMLHttpRequest> => {
         return this.request(
             url,
             { ...options, method: METHOD.PUT },
@@ -55,7 +57,7 @@ class httpTransport {
         );
     }
 
-    delete(url: string, options: Options): Promise<XMLHttpRequest> {
+    delete: HTTPMethod = (url, options = {}): Promise<XMLHttpRequest> => {
         return this.request(
             url,
             { ...options, method: METHOD.DELETE },

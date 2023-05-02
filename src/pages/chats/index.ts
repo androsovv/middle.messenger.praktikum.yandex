@@ -18,6 +18,7 @@ export class Chats extends Block {
             name: 'message',
             class: 'message-input',
             type: 'text',
+            placeholder: 'Сообщение',
         });
 
         this.children.error = new ErrorText({

@@ -2,7 +2,7 @@ import { EventBus } from "./EventBus";
 import { nanoid } from 'nanoid';
 
 // Нельзя создавать экземпляр данного класса
-class Block {
+abstract class Block <Props extends Record<string, any> = unknown> {
     static EVENTS = {
         INIT: "init",
         FLOW_CDM: "flow:component-did-mount",
@@ -11,7 +11,7 @@ class Block {
     };
 
     public id = nanoid(6);
-    protected props: any;
+    protected props: Props;
     public children: Record<string, Block>;
     protected eventBus: () => EventBus;
     private _element: HTMLElement | null = null;
@@ -59,7 +59,7 @@ class Block {
     }
 
     _addEvents() {
-        const {events = {}} = this.props as { events: Record<string, () =>void> };
+        const {events = {}} = this.props;
 
         Object.keys(events).forEach(eventName => {
             this._element?.addEventListener(eventName, events[eventName]);
@@ -67,7 +67,7 @@ class Block {
     }
 
     protected _removeEvents() {
-        const {events = {}} = this.props as { events: Record<string, () =>void> };
+        const {events = {}} = this.props;
 
         Object.keys(events).forEach(eventName => {
             this._element?.removeEventListener(eventName, events[eventName]);

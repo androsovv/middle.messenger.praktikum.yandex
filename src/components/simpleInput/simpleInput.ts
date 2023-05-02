@@ -5,7 +5,9 @@ import Block from "../../utils/Block";
 type simpleInputProps = {
     name: string,
     type: string,
-    class: string,
+    class?: string,
+    value?: string,
+    placeholder?: string
 }
 
 export class SimpleInput extends Block {
