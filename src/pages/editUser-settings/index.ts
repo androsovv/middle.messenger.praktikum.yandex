@@ -62,7 +62,7 @@ export class UserEdit extends Block{
             },
         });
         this.children.chatNameInput = new EditInput({
-            name: 'chatName',
+            name: 'display_name',
             type: 'text',
             class: 'user-settings_input',
             value: 'ღ::..Одино4ка..::ღ ',
