@@ -5,7 +5,6 @@
     max-width: 280px;
 
     &__over-text {
-         font-family: 'Inter';
          font-style: normal;
          font-weight: 500;
          font-size: 9px;
@@ -15,7 +14,6 @@
 
      &__input {
         border: none;
-        font-family: 'Inter';
         font-style: normal;
         font-weight: 500;
         font-size: 13px;
@@ -27,4 +25,5 @@
      &__bottom-line {
         border: 1px solid var(--main-blue);
       }
+
 }

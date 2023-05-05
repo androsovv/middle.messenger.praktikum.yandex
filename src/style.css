@@ -1,11 +1,11 @@
-@import "./components/button/button.css";
-@import "./components/input/input.css";
-@import "./pages/chats/chats.css";
-@import "./pages/error-400/error-400.css";
-@import "./pages/error-500/error-500.css";
-@import "pages/login/login.css";
-@import "pages/registration/registration.css";
-@import "pages/user-settings/userSettings.css";
+@import url("./components/button/button.css");
+@import url("./components/input/input.css");
+@import url("./pages/chats/chats.css");
+@import url("./pages/error-400/error-400.css");
+@import url("./pages/error-500/error-500.css");
+@import url("pages/login/login.css");
+@import url("pages/registration/registration.css");
+@import url("pages/user-settings/userSettings.css");
 
 :root {
     --main-blue: #3369F3;
@@ -14,11 +14,13 @@
     --sub-text-color: #999999;
     --light-grey: #EFEFEF;
     --border-color: #EAEAEA;
+    --red-link: #FF0000;
+
 }
 
 * {
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+    font-family: Inter, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -27,16 +29,24 @@ a {
     text-decoration: none;
 }
 
+input {
+    border: none;
+}
+
 ul {
     list-style-type: none;
 }
 
+button {
+    border: none;
+}
 
 .root {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    margin-top: 20px;
 }
 
 .route-links {
@@ -45,7 +55,6 @@ ul {
     display: flex;
     justify-content: right;
     gap: 20px;
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
@@ -57,3 +66,17 @@ nav {
     top: 0px;
     left: 0px;
 }
+
+.link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--main-blue);
+    text-align: center;
+}
+
+.link-red {
+    color: var(--red-link);
+}
+
+
