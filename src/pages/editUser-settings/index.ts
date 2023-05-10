@@ -3,7 +3,8 @@ import './editUser.css';
 import Block from "../../utils/Block";
 import {Button} from "../../components/button";
 import {EditInput} from "../../components/editInput";
-import {emailValidate, loginValidate, nameValidate, phoneValidate} from "../../utils/validator";
+import {emailValidate, loginValidate, messageValidate, nameValidate, phoneValidate} from "../../utils/validator";
+import {formSubmit} from "../../utils/formSubmit";
 
 type userEditProps = {
     events?: {
@@ -13,7 +14,13 @@ type userEditProps = {
 
 export class UserEdit extends Block{
     constructor(props: userEditProps) {
-        super('div', props);
+        super('div', {...props,
+            events: {
+                submit: (event: SubmitEvent) => {
+                    formSubmit(event);
+                }
+            }
+        });
     }
 
     protected init() {

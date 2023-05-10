@@ -3,6 +3,8 @@ import "./chats.css";
 import Block from "../../utils/Block";
 import {SimpleInput} from "../../components/simpleInput/simpleInput";
 import {ErrorText} from "../../components/error";
+import {formSubmit} from "../../utils/formSubmit";
+import {messageValidate} from "../../utils/validator";
 
 type chatsProps = {
     events?: {
@@ -11,7 +13,14 @@ type chatsProps = {
 }
 export class Chats extends Block {
     constructor(props: chatsProps) {
-        super('div', props);
+        super('div', {...props,
+            events: {
+                submit: (event: SubmitEvent) => {
+                    formSubmit(event);
+                    this.children.error.setProps({ text: messageValidate(event)});
+                }
+            }
+        });
     }
     init() {
         this.children.input = new SimpleInput({

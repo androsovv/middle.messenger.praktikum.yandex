@@ -1,7 +1,10 @@
 import { EventBus } from "./EventBus";
 import { nanoid } from 'nanoid';
 
+
+
 // Нельзя создавать экземпляр данного класса
+
 abstract class Block <Props extends Record<string, any> = unknown> {
     static EVENTS = {
         INIT: "init",
@@ -98,6 +101,7 @@ abstract class Block <Props extends Record<string, any> = unknown> {
 
     _componentDidMount() {
         this.componentDidMount();
+        console.log('render');
     }
 
     componentDidMount() {}
@@ -209,10 +213,12 @@ abstract class Block <Props extends Record<string, any> = unknown> {
 
     show() {
         this.getContent()!.style.display = "block";
+        console.log('show');
     }
 
     hide() {
         this.getContent()!.style.display = "none";
+        console.log('hide');
     }
 }
 

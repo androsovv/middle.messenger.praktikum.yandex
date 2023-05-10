@@ -4,7 +4,10 @@ import Block from '../../utils/Block';
 
 
 type buttonProps = {
-    label: string
+    label: string,
+    events?: {
+        submit: (event: SubmitEvent) => void;
+      }
 };
 export class Button extends Block {
     constructor(props: buttonProps) {
